@@ -6,5 +6,6 @@
     "description": "Official Haxe port of Sqids. Generate short unique IDs from numbers.",
     "version": "0.1.0",
     "classPath": "src",
+    "contributors": ["4kimov"],
     "dependencies": {}
   }
