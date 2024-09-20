@@ -1,5 +1,7 @@
 # [Sqids Haxe](https://sqids.org/haxe)
 
+[![Github Actions](https://img.shields.io/github/actions/workflow/status/sqids/sqids-haxe/tests.yml)](https://github.com/sqids/sqids-haxe/actions)
+
 [Sqids](https://sqids.org/haxe) (*pronounced "squids"*) is a small library that lets you **generate unique IDs from numbers**. It's good for link shortening, fast & URL-safe ID generation and decoding back into numbers for quicker database lookups.
 
 Features:
