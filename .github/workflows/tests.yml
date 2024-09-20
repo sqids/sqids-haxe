@@ -1,0 +1,31 @@
+name: Haxe Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup Haxe
+      uses: krdlab/setup-haxe@v1
+      with:
+        haxe-version: 4.3.6
+
+    - name: Install dependencies
+      run: |
+        haxelib install utest
+        haxelib install all
+
+    - name: Compile tests
+      run: haxe test.hxml
+
+    - name: Run tests
+      run: node bin/test.js
+
