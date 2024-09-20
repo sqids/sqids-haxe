@@ -1,0 +1,30 @@
+# Library Build File (build.hxml)
+
+# Source path
+-cp src
+
+# Library output
+-D sqids
+
+# Include all classes in the sqids package
+--macro include('sqids')
+
+# Generate documentation
+-xml doc/sqids.xml
+-D doc-gen
+
+# Compilation flags
+-D analyzer-optimize
+
+# Output
+-js dist/sqids.js
+
+# You can uncomment and modify these lines to build for other targets
+# -php dist/php
+# -cpp dist/cpp
+# -cs dist/cs
+# -java dist/java
+# -python dist/sqids.py
+
+# Generate a .zip file for haxelib submission
+--cmd zip -r sqids.zip src haxelib.json README.md LICENSE

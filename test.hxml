@@ -1,0 +1,21 @@
+# Test Build File (test.hxml)
+
+# Source paths
+-cp src
+-cp test
+
+# Library dependencies
+-lib utest
+
+# Main class for tests
+-main test.TestMain
+
+# Output
+-js bin/test.js
+
+# Compilation flags
+-D analyzer-optimize
+-debug
+
+# Uncomment the following line to generate source maps
+# --js-source-map

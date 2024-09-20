@@ -1,0 +1,10 @@
+{
+    "name": "sqids",
+    "url": "https://github.com/sqids/sqids-haxe",
+    "license": "MIT",
+    "tags": ["sqids", "hashids", "uid"],
+    "description": "Official Haxe port of Sqids. Generate short unique IDs from numbers.",
+    "version": "0.1.0",
+    "classPath": "src",
+    "dependencies": {}
+  }
